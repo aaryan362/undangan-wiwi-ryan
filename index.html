@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Wiwi & Ryan</title>
+    <style>
+    body {
+        margin: 0;
+        min-height: 100vh;
+        background-color: #0b1833;
+        color: #e7c779;
+        font-family: Georgia, serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 42px;
+        font-weight: normal;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    body::before {
+        content: "";
+        position: fixed;
+        inset: 18px;
+        border: 1px solid #b99a53;
+        pointer-events: none;
+    }
+
+    body::after {
+        content: "";
+        position: fixed;
+        inset: 27px;
+        border: 1px solid rgba(231, 199, 121, 0.25);
+        pointer-events: none;
+    }
+
+    .ornamen-sudut {
+        position: fixed;
+        width: 38px;
+        height: 38px;
+        border: 1px solid #b99a53;
+        transform: rotate(45deg);
+        pointer-events: none;
+        opacity: 0.85;
+    }
+
+    .sudut-kiri-atas {
+        top: 35px;
+        left: 35px;
+    }
+
+    .sudut-kanan-atas {
+        top: 35px;
+        right: 35px;
+    }
+
+    .sudut-kiri-bawah {
+        bottom: 35px;
+        left: 35px;
+    }
+
+    .sudut-kanan-bawah {
+        bottom: 35px;
+        right: 35px;
+    }
+
+    .kujang-area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .kujang-svg {
+        width: 150px;
+        height: 230px;
+        filter: drop-shadow(0 0 12px rgba(231, 199, 121, 0.3));
+    }
+
+</style>
+</head>
+<body>
+    
+<div class="ornamen-sudut sudut-kiri-atas"></div>
+<div class="ornamen-sudut sudut-kanan-atas"></div>
+<div class="ornamen-sudut sudut-kiri-bawah"></div>
+<div class="ornamen-sudut sudut-kanan-bawah"></div>
+
+
+
+<div class="kujang-area">
+    <img
+        src="kujang.png"
+        alt="Kujang Sunda"
+        class="kujang-svg"
+    >
+</div>
+
+    <h1>Wiwi & Ryan</h1>
+    <p>Undangan Pernikahan</p>
+    <p>15 Maret 2026</p>
+
+</body>
+</html>
